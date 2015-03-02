@@ -2,7 +2,7 @@
 
 [![Puppet Forge](http://img.shields.io/puppetforge/v/conzar/amazon_s3.svg)](https://forge.puppetlabs.com/conzar/amazon_s3)
 [![Github Build Status](https://travis-ci.org/Conzar/amazon_s3.svg?branch=master)](https://travis-ci.org/Conzar/amazon_s3)
-[![Bitbucket Build Status](http://build.landcareresearch.co.nz/app/rest/builds/buildType:%28id:LinuxAdmin_Puppet_Puppet%29/statusIcon)
+[![Bitbucket Build Status](http://build.landcareresearch.co.nz/project.html?projectId=LinuxAdmin_Puppet)](http://build.landcareresearch.co.nz/app/rest/builds/buildType:%28id:LinuxAdmin_Puppet_Puppet%29/statusIcon)
 
 ## Overview
 
