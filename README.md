@@ -4,7 +4,6 @@
 [![Github Build Status](https://travis-ci.org/Conzar/amazon_s3.svg?branch=master)](https://travis-ci.org/Conzar/amazon_s3)
 [![Bitbucket Build Status](http://build.landcareresearch.co.nz/app/rest/builds/buildType%3A%28id%3ALinuxAdmin_Puppet_Puppet%29/statusIcon)](http://build.landcareresearch.co.nz/viewType.html?buildTypeId=LinuxAdmin_Puppet_Puppet&guest=1)
 
-
 ## Overview
 
 Manages mounting s3 buckets.
