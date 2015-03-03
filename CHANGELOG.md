@@ -1,3 +1,12 @@
+## 2015-03-04 Release 0.1.3
+### Summary
+Migrated ownership
+
+### Changes
+  - Migrated source code control to bitbucket
+  - Changed ownership to landcare research puppetforge account
+  - Added copywrite notice to all source files.
+  
 ## 2015-02-19 Release 0.1.2
 ### Summary
 License File

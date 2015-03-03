@@ -30,7 +30,7 @@
 #
 # === Copyright
 #
-# GPLv3
+# GPL-3.0+
 #
 class amazon_s3 (
   $aws_access_key,
