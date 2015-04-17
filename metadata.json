@@ -1,6 +1,6 @@
 {
   "name": "landcareresearch-amazon_s3",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Michael Speth",
   "summary": "Manages mounting S3 buckets",
   "license": "GPL-3.0+",
