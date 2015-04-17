@@ -5,7 +5,7 @@
 # === Parameters
 #
 # [*aws_access_key*]
-#  The access key for AWS. 
+#  The access key for AWS.
 #
 # [*secret_access_key*]
 #   The secret key for AWS.
@@ -13,6 +13,13 @@
 # [*s3fs_version*]
 #   The version of the s3fs.
 #   See https://github.com/s3fs-fuse/s3fs-fuse
+#
+# [*include_mime_package*]
+#   Installs mime which is a requirement to build; however,
+#   if this is used with the puppetlabs/apache module, a duplicate
+#   resource error will occur even when using ensure_packages.
+#   So if mime_support package is declared outside, set this to false.
+#   Default: true
 #
 # === Variables
 #
@@ -35,7 +42,8 @@
 class amazon_s3 (
   $aws_access_key,
   $secret_access_key,
-  $s3fs_version = 'v1.78',
+  $s3fs_version         = 'v1.78',
+  $include_mime_package = true,
 ){
 
   # == Variables == #

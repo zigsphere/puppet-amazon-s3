@@ -1,3 +1,10 @@
+## 2015-04-17 Release 0.1.4
+### Summary
+Added mime-support package toggle.
+
+### Changes
+  - Added a parameter to toggle if the mime-support package should be installed.
+
 ## 2015-03-04 Release 0.1.3
 ### Summary
 Migrated ownership

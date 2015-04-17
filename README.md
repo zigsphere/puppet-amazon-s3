@@ -64,6 +64,13 @@ The secret key for your AWS IAM user that has access to the S3 bucket(s).
 This is the version of s3fs-fuse to install.  The version referes to the tags in the git repositoryg.
 Currently, version [v1.78](https://github.com/s3fs-fuse/s3fs-fuse/tree/v1.78) is the default.
 
+##### `include_mime_package`
+Installs mime which is a requirement to build; however,
+if this is used with the puppetlabs/apache module, a duplicate
+resource error will occur even when using ensure_packages.
+So if mime_support package is declared outside, set this to false.
+Default: true
+
 ####Defined Type: `amazon_s3::s3_mount`
 
 Defines an S3 automount (in fstab).  Also attempts to mount the bucket once defined.

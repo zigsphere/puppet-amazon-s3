@@ -13,11 +13,17 @@
 # GPL-3.0+
 #
 class amazon_s3::install {
-  
-  $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
-  'libxml2-dev','mime-support','automake','libtool','git']
+
+  if $amazon_s3::include_mime_package {
+    $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
+    'libxml2-dev','mime-support','automake','libtool','git']
+  } else {
+    $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
+    'libxml2-dev','automake','libtool','git']
+  }
+
   ensure_packages($packages)
-  
+
   vcsrepo { $amazon_s3::s3fs_src_dir:
     ensure   => 'present',
     provider => 'git',
