@@ -44,7 +44,7 @@ class amazon_s3 (
   $secret_access_key    = $amazon_s3::params::secret_access_key,
   $s3fs_version         = $amazon_s3::params::s3fs_versionm,
   $include_mime_package = $amazon_s3::params::include_mime_package,
-) inherits docker::params {
+) inherits amazon_s3::params {
 
   # == Variables == #
   $s3fs_src_dir = '/opt/s3fs'
