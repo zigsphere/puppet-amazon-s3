@@ -38,7 +38,7 @@ class amazon_s3::install {
  /usr/bin/make install",
     cwd         => $amazon_s3::s3fs_src_dir,
     refreshonly => true,
-    subscribe   => Vcsrepo [$amazon_s3::s3fs_src_dir],
+    subscribe   => Vcsrepo[$amazon_s3::s3fs_src_dir],
   }
   exec { 'install s3fs':
     command     => '/usr/bin/make install',
