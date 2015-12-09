@@ -14,7 +14,7 @@
 #
 class amazon_s3::install {
 
-  if $amazon_s3::include_mime_package {
+  if str2bool($amazon_s3::include_mime_package) {
     $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
     'libxml2-dev','mime-support','automake','libtool','git']
   } else {
