@@ -1,3 +1,11 @@
+## 2015-12-10 Release 0.1.5
+### Summary
+Added params class
+
+### Changes
+  - Added a params class for better encapsulation.
+  - Added a contributors file
+
 ## 2015-04-17 Release 0.1.4
 ### Summary
 Added mime-support package toggle.
