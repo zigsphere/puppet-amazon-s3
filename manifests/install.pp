@@ -12,7 +12,7 @@
 #
 # GPL-3.0+
 #
-class amazon_s3::install inherits ntp {
+class amazon_s3::install inherits amazon_s3 {
 
   if $amazon_s3::include_mime_package {
     $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
