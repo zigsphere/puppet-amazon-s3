@@ -92,6 +92,10 @@ Defaults to 'nonempty,allow_other'
 #####`s3_bucket_name`
 The name of the S3 bucket to mount.  By default, it uses the title.
 
+####`include_mime_package`
+Manages mime support packages. Defaults to `true`.
+Set this parameter to `false` if using `puppetlabs/apache`. 
+
 
 ## Limitations
 
@@ -99,4 +103,4 @@ Only works with debian based OS's.
 
 ## Development
 
-The module is open source and available on github.  Please fork!
+The module is open source and available on Bitbucket.  Please fork!
