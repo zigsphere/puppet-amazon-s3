@@ -103,4 +103,4 @@ Only works with debian based OS's.
 
 ## Development
 
-The module is open source and available on Bitbucket.  Please fork!
+The module is open source and available on [Bitbucket](https://bitbucket.org/landcareresearch/puppet-amazon-s3).  Please fork!
