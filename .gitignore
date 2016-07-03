@@ -2,3 +2,6 @@ Gemfile.lock
 pkg/*
 .project
 modules
+vagrant/puppet/modules
+.vagrant
+vagrant/results.txt

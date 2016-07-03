@@ -1,3 +1,12 @@
+## 2016-07-04 Release 0.1.6
+### Summary
+Added parameter checks
+
+### Changes
+  - Added a check for a paramter
+  - Updated documentation on new parameter
+  - Added a vagrant folder for testing
+
 ## 2015-12-10 Release 0.1.5
 ### Summary
 Added params class
