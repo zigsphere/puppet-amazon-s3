@@ -4,10 +4,6 @@
 #
 # === Parameters
 #
-# === Authors
-#
-# Michael Speth <spethm@landcareresearch.co.nz>
-#
 # === Copyright
 #
 # GPL-3.0+
@@ -15,11 +11,10 @@
 class amazon_s3::install {
 
   if str2bool($amazon_s3::include_mime_package) {
-    $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
-    'libxml2-dev','mime-support','automake','libtool','git']
+    $packages = concat($amazon_s3::params::base_packages,
+    ['mime-support','libtool'])
   } else {
-    $packages = ['build-essential', 'libfuse-dev','libcurl4-openssl-dev',
-    'libxml2-dev','automake','libtool','git']
+    $packages = $amazon_s3::params::base_packages
   }
 
   ensure_packages($packages)

@@ -17,10 +17,6 @@
 # [*s3_bucket_name*]
 #   The name of the s3 bucket. By default, it uses the title.
 #
-# === Authors
-#
-# Michael Speth <spethm@landcareresearch.co.nz>
-#
 # === Copyright
 #
 # GPL-3.0+

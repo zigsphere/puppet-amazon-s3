@@ -1,3 +1,12 @@
+## 2016-08-15 Release 0.1.7
+### Summary
+Added support for Ubuntu 16.04
+
+### Changes
+  - Added support for compiling on Ubuntu 16.04
+  - Removed author from comments since there is a contributors.txt file
+  - Updated the default version of s3fs to 1.80
+
 ## 2016-07-04 Release 0.1.6
 ### Summary
 Added parameter checks

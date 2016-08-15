@@ -23,7 +23,7 @@ S3 buckets.  See: [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse).
 ### Beginning with amazon_s3
 
 To install s3fs and setup the configuration for mounting with default parameters.
-Note, its recomended to NOT store the access key or secret key in your puppet manifest.
+Note, its recommended to NOT store the access key or secret key in your puppet manifest.
 Its a good practice to use [hiera](https://docs.puppetlabs.com/hiera/1/) and [eyaml](https://github.com/TomPoulton/hiera-eyaml).
 
 ```

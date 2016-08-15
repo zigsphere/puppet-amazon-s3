@@ -1,1 +1,1 @@
-require './config/ubuntu14.04'
+require './config/centos7.0'

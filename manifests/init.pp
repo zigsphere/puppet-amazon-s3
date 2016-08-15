@@ -31,10 +31,6 @@
 #  class { 'amazon_s3':
 #  }
 #
-# === Authors
-#
-# Michael Speth <spethm@landcareresearch.co.nz>
-#
 # === Copyright
 #
 # GPL-3.0+

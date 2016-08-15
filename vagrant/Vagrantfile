@@ -5,6 +5,9 @@ include MyVars
 
 Vagrant.configure("2") do |config|
 
+  # disable b/c of centos
+  config.ssh.insert_key = false
+
   # set the boxes dynamically
   config.vm.box     = OS
   config.vm.box_url = OS_URL
