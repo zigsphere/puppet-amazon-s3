@@ -29,7 +29,7 @@ define amazon_s3::s3_mount(
 ){
   file{$mount_point:
     ensure => directory,
-    mode   => '0777',
+#    mode   => '0777',
   }
 
   # mount the s3 bucket
