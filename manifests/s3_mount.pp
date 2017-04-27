@@ -23,9 +23,9 @@
 #
 define amazon_s3::s3_mount(
   $mount_point,
-  $ensure         = 'mounted',
-  $options        = 'nonempty,allow_other',
-  $s3_bucket_name = $title,
+  String $ensure         = 'mounted',
+  String $options        = 'nonempty,allow_other',
+  String $s3_bucket_name = $title,
 ){
   file{$mount_point:
     ensure => directory,

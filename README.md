@@ -54,21 +54,36 @@ Installs and configures S3fs-fuse in order to mount S3 buckets.
 
 **Parameters within `amazon_s3`:**
 
-#####`aws_access_key`
+##### `aws_access_key`
+
+Data type: *String*
+
 The access key for your AWS IAM user that has access to the S3 bucket(s) that you plan on mounting.
 
 #####`secret_access_key`
+
+Data type: *String*
+
 The secret key for your AWS IAM user that has access to the S3 bucket(s).
 
 #####`s3fs_version`
-This is the version of s3fs-fuse to install.  The version referes to the tags in the git repositoryg.
-Currently, version [v1.78](https://github.com/s3fs-fuse/s3fs-fuse/tree/v1.78) is the default.
+
+Data type: *String*
+
+This is the version of s3fs-fuse to install.  The version referes to the tags in the git repository.
+Latest stable version is [v1.80](https://github.com/s3fs-fuse/s3fs-fuse/tree/v1.80).
+
+Default: 'v1.80'
 
 ##### `include_mime_package`
+
+Data type: *Boolean*
+
 Installs mime which is a requirement to build; however,
 if this is used with the puppetlabs/apache module, a duplicate
 resource error will occur even when using ensure_packages.
 So if mime_support package is declared outside, set this to false.
+
 Default: true
 
 ####Defined Type: `amazon_s3::s3_mount`
@@ -82,19 +97,28 @@ The path to mount the bucket.  This module ensures the directory exists; however
 it does not ensure that the parent(s) to the path exists.  
 
 #####`ensure`
+
+Data type: *String*
+
 Controls the mount accepting the same values as the 'mount' type.
-Defaults to 'mounted'
+
+Default: 'mounted'
 
 #####`options`
+
+Data type: *String*
+
 Options for the mount.
-Defaults to 'nonempty,allow_other'
+
+Default: 'nonempty,allow_other'
 
 #####`s3_bucket_name`
-The name of the S3 bucket to mount.  By default, it uses the title.
 
-####`include_mime_package`
-Manages mime support packages. Defaults to `true`.
-Set this parameter to `false` if using `puppetlabs/apache`. 
+Data type: *String*
+
+The name of the S3 bucket to mount.
+
+Default: $title
 
 
 ## Limitations

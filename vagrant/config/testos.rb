@@ -1,1 +1,1 @@
-require './config/centos7.0'
+require './config/ubuntu16.04'

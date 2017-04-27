@@ -1,3 +1,14 @@
+## 2017-04-28 Release 0.2.0
+### Summary
+Fixed potential mount options bug and puppet 4 support.
+
+### Changes
+  - Merged PR to remove mode on mount point.
+  - Removed a redundant package.
+  - Added Puppet 4 typed parameters.
+  - Updated Readme.
+
+
 ## 2016-08-15 Release 0.1.7
 ### Summary
 Added support for Ubuntu 16.04
