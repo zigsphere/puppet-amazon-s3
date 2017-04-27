@@ -11,5 +11,5 @@ class amazon_s3::params {
   # required packages
   $base_packages = ['build-essential', 'automake', 'autotools-dev', 'g++',
   'git', 'libcurl4-gnutls-dev', 'libfuse-dev', 'libssl-dev', 'libxml2-dev',
-  'make', 'pkg-config', 'pkg-config']
+  'make', 'pkg-config']
 }
