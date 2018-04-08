@@ -4,10 +4,6 @@
 #
 # === Parameters
 #
-# === Authors
-#
-# Michael Speth <spethm@landcareresearch.co.nz>
-#
 # === Copyright
 #
 # GPL-3.0+

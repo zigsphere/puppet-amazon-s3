@@ -36,26 +36,32 @@
 # GPL-3.0+
 #
 class amazon_s3 (
-  Optional[String] $aws_access_key    = undef,
-  Optional[String] $secret_access_key = undef,
-  String $s3fs_version                = $amazon_s3::params::s3fs_version,
-  Boolean $include_mime_package       = $amazon_s3::params::include_mime_package,
+  Optional[String] $aws_access_key       = undef,
+  Optional[String] $secret_access_key    = undef,
+  String           $s3fs_version         = $amazon_s3::params::s3fs_version,
+  Boolean          $include_mime_package =
+  $amazon_s3::params::include_mime_package,
 ) inherits amazon_s3::params {
+
+  anchor { 'amazon_s3::begin': }
 
   # == Variables == #
   $s3fs_src_dir = '/opt/s3fs'
 
   # Check supported operating systems
   unless $::osfamily == 'debian' or $::osfamily == 'RedHat' {
-    fail("Unsupported OS ${::osfamily}.  Please use a debian or redhat based system")
+    fail("Unsupported OS ${::osfamily}.\
+      Please use a debian or redhat based system")
   }
-  anchor { 'amazon_s3::begin': }
+
   class{'amazon_s3::install':
     require => Anchor['amazon_s3::begin'],
   }
+
   class{'amazon_s3::config':
     require => Class['amazon_s3::install'],
   }
+
   anchor { 'amazon_s3::end':
     require => Class['amazon_s3::config'],
   }

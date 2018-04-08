@@ -1,3 +1,12 @@
+## 2018-04-09 Release 0.2.1
+### Summary
+Added support for centos.
+
+### Changes
+  - Added initial support for centos operating systems.
+  - Added usage of IAM roles instead of Access/Secret
+  - Updated readme with additional information regarding iam roles
+
 ## 2017-04-28 Release 0.2.0
 ### Summary
 Fixed potential mount options bug and puppet 4 support.

@@ -16,8 +16,10 @@ S3 buckets.  See: [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse).
 
 ### Requirements for amazon_s3
 
-* You will need your [Amazon Access keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html).
-* You will also need to have already created an S3 Bucket.
+* S3 Bucket Permissions (one of the below)
+  * [Amazon Access keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html).
+  * [IAM Role attached to EC2 Instance](https://aws.amazon.com/blogs/security/easily-replace-or-attach-an-iam-role-to-an-existing-ec2-instance-by-using-the-ec2-console)
+* An S3 Bucket.
 * Make sure the IAM user has [access](http://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html) to your S3 bucket.
 
 ### Beginning with amazon_s3
@@ -58,7 +60,7 @@ Installs and configures S3fs-fuse in order to mount S3 buckets.
 
 Data type: *String*
 
-The access key for your AWS IAM user that has access to the S3 bucket(s) that you plan on mounting.
+The access key for your AWS IAM user that has access to the S3 bucket(s) to be mounted.
 
 #####`secret_access_key`
 
@@ -70,7 +72,7 @@ The secret key for your AWS IAM user that has access to the S3 bucket(s).
 
 Data type: *String*
 
-This is the version of s3fs-fuse to install.  The version referes to the tags in the git repository.
+The version of s3fs-fuse to install.  The version refers to the tags in the git repository.
 Latest stable version is [v1.80](https://github.com/s3fs-fuse/s3fs-fuse/tree/v1.80).
 
 Default: 'v1.80'
@@ -123,7 +125,7 @@ Default: $title
 
 ## Limitations
 
-Only works with debian based OS's.
+Only works with debian and redhat based OS's.
 
 ## Development
 
