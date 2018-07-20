@@ -1,25 +1,18 @@
-# == Defined Type: amazon_s3::s3_mount
+# @summary The individual s3 mount.
 #
-# The individual s3 mount.
 # Requires amazon_s3.
 #
-# === Parameters
-#
-# [*mount_point*]
+# @param mount_point
 #   The path to mount.  Note, this module ensures the directory exists.
 #
-# [*ensure*]
+# @param ensure
 #   Controls the mount and accepts the same values as the 'mount' type.
 #
-# [*options*]
+# @param options
 #   Options used when mounting.
 #
-# [*s3_bucket_name*]
+# @param s3_bucket_name
 #   The name of the s3 bucket. By default, it uses the title.
-#
-# === Copyright
-#
-# GPL-3.0+
 #
 define amazon_s3::s3_mount(
   $mount_point,
@@ -29,7 +22,6 @@ define amazon_s3::s3_mount(
 ){
   file{$mount_point:
     ensure => directory,
-#    mode   => '0777',
   }
 
   # mount the s3 bucket

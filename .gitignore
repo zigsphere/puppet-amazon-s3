@@ -5,3 +5,4 @@ modules
 vagrant/puppet/modules
 .vagrant
 vagrant/results.txt
+.yardoc

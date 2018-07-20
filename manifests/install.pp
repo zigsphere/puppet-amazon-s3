@@ -1,12 +1,4 @@
-# == Class: amazon_s3::install
-#
-# Installs the required software
-#
-# === Parameters
-#
-# === Copyright
-#
-# GPL-3.0+
+# @summary Installs the required software
 #
 class amazon_s3::install {
 

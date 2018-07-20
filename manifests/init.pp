@@ -1,37 +1,23 @@
-# == Class: amazon_s3
+# @summary Installs and configures S3fs-fuse in order to mount S3 buckets.
 #
-# Installs and configures S3fs-fuse in order to mount S3 buckets.
+# @param aws_access_key
+#   The access key for AWS.
 #
-# === Parameters
-#
-# [*aws_access_key*]
-#  The access key for AWS.
-#
-# [*secret_access_key*]
+# @param secret_access_key
 #   The secret key for AWS.
 #
-# [*s3fs_version*]
+# @param s3fs_version
 #   The version of the s3fs.
-#   See https://github.com/s3fs-fuse/s3fs-fuse
 #
-# [*include_mime_package*]
+#   @see https://github.com/s3fs-fuse/s3fs-fuse
+#
+# @param include_mime_package
 #   Installs mime which is a requirement to build; however,
 #   if this is used with the puppetlabs/apache module, a duplicate
 #   resource error will occur even when using ensure_packages.
 #   So if mime_support package is declared outside, set this to false.
-#   Default: true
 #
-# === Variables
-#
-# [*s3fs_src_dir*]
-#   The source directory for compiling s3fs
-#
-# === Examples
-#
-#  class { 'amazon_s3':
-#  }
-#
-# === Copyright
+# **Copyright**
 #
 # GPL-3.0+
 #
@@ -46,6 +32,7 @@ class amazon_s3 (
   anchor { 'amazon_s3::begin': }
 
   # == Variables == #
+  # The source directory for compiling s3fs
   $s3fs_src_dir = '/opt/s3fs'
 
   # Check supported operating systems

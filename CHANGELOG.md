@@ -1,3 +1,7 @@
+## 2018-07-20 Release 0.2.2
+  - Changed comments to use puppet strings.
+  - Added reference document generated from puppet strings comments.
+
 ## 2018-04-09 Release 0.2.1
 ### Summary
 Added support for centos.

@@ -1,12 +1,4 @@
-# == Class: amazon_s3::config
-#
-# Configures the mounts for amazon s3.
-#
-# === Parameters
-#
-# === Copyright
-#
-# GPL-3.0+
+# @summary Configures the mounts for amazon s3.
 #
 class amazon_s3::config {
   if $amazon_s3::aws_access_key and $amazon_s3::secret_access_key {
