@@ -17,16 +17,15 @@
 #   resource error will occur even when using ensure_packages.
 #   So if mime_support package is declared outside, set this to false.
 #
-# **Copyright**
-#
-# GPL-3.0+
+# @param use_system_package
+#   If the system being deployed already has s3fs in the repos, use this flag.
 #
 class amazon_s3 (
   Optional[String] $aws_access_key       = undef,
   Optional[String] $secret_access_key    = undef,
   String           $s3fs_version         = $amazon_s3::params::s3fs_version,
-  Boolean          $include_mime_package =
-  $amazon_s3::params::include_mime_package,
+  Boolean          $include_mime_package = $amazon_s3::params::include_mime_package,
+  Boolean          $use_system_package   = false,
 ) inherits amazon_s3::params {
 
   anchor { 'amazon_s3::begin': }

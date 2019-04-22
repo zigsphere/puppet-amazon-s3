@@ -12,6 +12,8 @@ Manages mounting s3 buckets.
 Compiles and installs s3fs-fuse (from source) to provide support for mounting
 S3 buckets.  See: [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse).
 
+Using the system packages is now an option if compilation is not required.
+
 ## Setup
 
 ### Requirements for amazon_s3

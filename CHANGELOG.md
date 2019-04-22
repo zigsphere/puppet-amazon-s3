@@ -1,3 +1,6 @@
+## 2019-04-23 Release 0.2.3
+  - Added a flag to use distribution's repositories instead of compiling.
+
 ## 2018-07-20 Release 0.2.2
   - Changed comments to use puppet strings.
   - Added reference document generated from puppet strings comments.
