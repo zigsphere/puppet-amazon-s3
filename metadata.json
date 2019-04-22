@@ -4,7 +4,7 @@
   "author": "Landcare Research",
   "summary": "Manages mounting S3 buckets",
   "license": "GPL-3.0+",
-  "source": "git://bitbucket.org/landcareresearch/puppet-amazon-s3.git",
+  "source": "https://bitbucket.org/landcareresearch/puppet-amazon-s3",
   "project_page": "https://bitbucket.org/landcareresearch/puppet-amazon-s3",
   "issues_url": "https://bitbucket.org/landcareresearch/puppet-amazon-s3/issues",
   "dependencies": [
