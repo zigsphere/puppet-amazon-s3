@@ -1,3 +1,6 @@
+## 2019-04-23 Release 0.2.4
+  - Fixed source url.
+
 ## 2019-04-23 Release 0.2.3
   - Added a flag to use distribution's repositories instead of compiling.
 
