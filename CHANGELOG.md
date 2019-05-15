@@ -1,3 +1,6 @@
+## 2019-05-15 Release 0.2.5
+  - Added _netdev as an option to ensure on boot mounts work through fstab.
+
 ## 2019-04-23 Release 0.2.4
   - Fixed source url.
 

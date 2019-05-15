@@ -17,7 +17,7 @@
 define amazon_s3::s3_mount(
   $mount_point,
   String $ensure         = 'mounted',
-  String $options        = 'nonempty,allow_other',
+  String $options        = '_netdev,nonempty,allow_other',
   String $s3_bucket_name = $title,
 ){
   file{$mount_point:
