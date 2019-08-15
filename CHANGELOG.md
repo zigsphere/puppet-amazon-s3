@@ -1,3 +1,6 @@
+## 2019-08-15 Release 0.2.7
+  - Added multireq_max to default options
+
 ## 2019-05-15 Release 0.2.6
   - Unified changelog documentation.
   - Tested on Ubuntu 18.04 and added as supported.
