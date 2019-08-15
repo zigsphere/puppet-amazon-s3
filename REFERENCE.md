@@ -111,7 +111,7 @@ Data type: `String`
 
 Options used when mounting.
 
-Default value: 'nonempty,allow_other'
+Default value: '_netdev,nonempty,allow_other,multireq_max=5'
 
 ##### `s3_bucket_name`
 
