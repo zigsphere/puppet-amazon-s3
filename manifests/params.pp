@@ -1,7 +1,7 @@
 # @summary Default parameter valuse for amazon_s3 module
 #
 class amazon_s3::params {
-  $s3fs_version = 'v1.80'
+  $s3fs_version = 'v1.85'
 
   if $::osfamily == 'RedHat' {
     $base_packages        =

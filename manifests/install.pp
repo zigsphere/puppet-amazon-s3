@@ -25,6 +25,7 @@ class amazon_s3::install {
       revision => $amazon_s3::s3fs_version,
       require  => Package[$packages],
     }
+
     exec { 'compile s3fs':
       command     => "${amazon_s3::s3fs_src_dir}/autogen.sh &&\
   ${amazon_s3::s3fs_src_dir}/configure --prefix=/usr &&\

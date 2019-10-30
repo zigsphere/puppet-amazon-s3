@@ -22,3 +22,9 @@
 /convert_report.txt
 /update_report.txt
 .DS_Store
+vagrant/ubuntu-bionic-18.04-cloudimg-console.log
+vagrant/ubuntu-xenial-16.04-cloudimg-console.log
+vagrant/.vagrant/
+vagrant/results.txt
+vagrant/puppet/modules/
+vagrant/puppet/g10k_cache/

@@ -10,7 +10,6 @@ Vagrant.configure("2") do |config|
 
   # set the boxes dynamically
   config.vm.box     = OS
-  config.vm.box_url = OS_URL
   
   # system memory
   config.vm.provider "virtualbox" do |v|
@@ -30,9 +29,5 @@ Vagrant.configure("2") do |config|
     puppet.environment      = "test"
     puppet.manifests_path = "../tests"
     puppet.manifest_file  = "init.pp"
-    puppet.facter = {
-      "pg_rpm_url"  => RPM_URL,
-      "pg_rpm_name" => RPM_NAME
-    }
   end
 end
