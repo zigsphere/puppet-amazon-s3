@@ -113,6 +113,22 @@ Options used when mounting.
 
 Default value: '_netdev,nonempty,allow_other,multireq_max=5'
 
+##### `aws_access_key`
+
+Data type: `Optional[String]`
+
+The access key for AWS.
+
+Default value: `undef`
+
+##### `secret_access_key`
+
+Data type: `Optional[String]`
+
+The secret key for AWS.
+
+Default value: `undef`
+
 ##### `s3_bucket_name`
 
 Data type: `String`

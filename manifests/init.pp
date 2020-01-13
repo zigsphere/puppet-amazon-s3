@@ -28,11 +28,13 @@ class amazon_s3 (
   Boolean          $use_system_package   = false,
 ) inherits amazon_s3::params {
 
-  anchor { 'amazon_s3::begin': }
-
   # == Variables == #
+
   # The source directory for compiling s3fs
-  $s3fs_src_dir = '/opt/s3fs'
+  $s3fs_src_dir  = '/opt/s3fs'
+
+  # The credentials directory for mount specific credentials.
+  $s3fs_cred_dir = '/etc/s3fs.d'
 
   # Check supported operating systems
   unless $::osfamily == 'debian' or $::osfamily == 'RedHat' {
@@ -40,15 +42,10 @@ class amazon_s3 (
       Please use a debian or redhat based system")
   }
 
-  class{'amazon_s3::install':
-    require => Anchor['amazon_s3::begin'],
-  }
+  contain amazon_s3::install
 
   class{'amazon_s3::config':
     require => Class['amazon_s3::install'],
   }
-
-  anchor { 'amazon_s3::end':
-    require => Class['amazon_s3::config'],
-  }
+  contain amazon_s3::config
 }

@@ -1,5 +1,12 @@
 # S3 Puppet Module Changelog
 
+## 2020-01-14 Release 0.3.1
+
+- Added parameters for using mount specific credentials instead of global credentials.
+- Fixed metadata to comply with PDK standards.
+- Removed anchor pattern.
+- Fixed ruby spec code to comply with linting.
+
 ## 2019-10-30 Release 0.3.0
 
 - Updated Changelog to comply with Markdown Linting.
