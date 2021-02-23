@@ -25,9 +25,6 @@
 .project
 .envrc
 /inventory.yaml
-vagrant/.vagrant/
-vagrant/puppet/g10k_cache/
-vagrant/puppet/modules/
+vagrant/.vagrant
 vagrant/results.txt
 vagrant/*.log
-

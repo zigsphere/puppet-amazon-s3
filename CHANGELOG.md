@@ -1,5 +1,9 @@
 # S3 Puppet Module Changelog
 
+## 2021-02-23 Release 6.0.0
+
+- Updated PDK and changed version to coincide with puppet compatibility.
+
 ## 2020-01-14 Release 0.3.1
 
 - Added parameters for using mount specific credentials instead of global credentials.
